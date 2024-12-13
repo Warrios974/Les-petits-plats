@@ -1,7 +1,6 @@
 .select{
     position: relative;
     display: inline-block;
-    width: 12em;
     border-radius: 5px;
     margin-right: 1em;
     &__input{
@@ -12,7 +11,7 @@
             cursor: pointer;
             position: absolute;
             height: 100%;
-            right: 0;
+            right: .5em;
             width: 1.2em;
         }
         > label{
@@ -23,7 +22,6 @@
             top: 25%;
         }
         > input{
-            margin-left: 1em;
             width: 100%;
             &::placeholder{
                 color: map-get($map: $colors, $key: color-white);
@@ -33,7 +31,7 @@
     &__choises{
         position: absolute;
         top: 3em;
-        right: 8px;
+        right: .75em;
         display: none;
         border-radius: 5px;
         width: 100%;

@@ -6,12 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "sass --watch ./sass/main.scss:./assets/stylesheets/style.css --style compressed",
-    "prefix": "postcss ./assets/stylesheets/style.css --use autoprefixer -d ./assets/stylesheets/prefixed/"
+    "prefix": "postcss ./assets/stylesheets/style.css --use autoprefixer -d ./assets/stylesheets/prefixed/",
+    "lint": "eslint ./scripts/components/*.js ./scripts/page/*.js ./scripts/utils/*.js ./scripts/proxy/*.js ./scripts/models/*.js ./scripts/search/*.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "eslint": "^8.31.0"
   }
 }

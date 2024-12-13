@@ -1,0 +1,6 @@
+#receiptsGalery > span{
+    margin: 4em 0;
+    color: darken($color: map-get($map: $colors, $key: color-gray), $amount: 40);
+    font-size: map-get($map: $font-size, $key: icons);
+    text-align: center;
+}

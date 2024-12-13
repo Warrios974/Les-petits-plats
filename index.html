@@ -19,68 +19,62 @@
             </div>
         </header>
         <main>
-            <section>
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12 mt-3">
-                            <form id="formFilter" class="form" action="index.html" method="post">
-                                <div class="mb-3">
-                                    <label for="seacrh"><img src="./assets/medias/icons/search.svg" alt="Seacrh"></label>
-                                    <input class="" type="text" name="seacrh" id="seacrh" placeholder="Rechercher une recette">
-                                </div>
-                                <div id="tagsFilters">
+            <div>
+                <form id="formFilter" class="container form" action="index.html" method="post">
+                    <div>
+                        <label for="seacrh"><img src="./assets/medias/icons/search.svg" alt="Seacrh"></label>
+                        <input class="" type="text" name="seacrh" id="seacrh" placeholder="Rechercher une recette">
+                    </div>
+                    <div id="tagsFilters">
 
-                                </div>
-                                <fieldset class="mt-3">
-                                    <div id="filterIngredients" class="col-2 select select--blue" select="close">
-                                        <div class="row select__input">
-                                            <label for="seacrhIngredient">Ingrédients</label>
-                                            <img src="./assets/medias/icons/chevron-down.svg" alt="" class="p-0 m-0" filter="yes">
-                                            <input class="" type="text" name="seacrhIngredient" id="seacrhIngredient">
-                                        </div>
-                                        <ul class="pb-2 select__choises">
-                                            
-                                        </ul>
-                                    </div>
-                                    <div id="filterAppliances" class="col-2 select select--cyan" select="close">
-                                        <div class="row select__input">
-                                            <label for="seacrhAppliance">Appareils</label>
-                                            <img src="./assets/medias/icons/chevron-down.svg" alt="" class="p-0 m-0" filter="yes">
-                                            <input class="" type="text" name="seacrhAppliance" id="seacrhAppliances">
-                                        </div>
-                                        <ul class="pb-2 select__choises">
-                                            
-                                        </ul>
-                                    </div>
-                                    <div id="filterUstensils" class="col-2 select select--orange" select="close">
-                                        <div class="row select__input">
-                                            <label for="seacrhUstensils">Ustensiles</label>
-                                            <img src="./assets/medias/icons/chevron-down.svg" alt="" class="p-0 m-0" filter="yes">
-                                            <input class="" type="text" name="seacrhUstensils" id="seacrhUstensils">
-                                        </div>
-                                        <ul class="pb-2 select__choises">
-                                            
-                                        </ul>
-                                    </div>
-                                </fieldset>
-                            </form>
-                        </div> 
                     </div>
-                </div>
-            </section>
-            <section>
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div id="receiptsGalery" class="row col-12">
-                            
+                    <fieldset id="filters">
+                        <div id="filterIngredients" class="col-2 select select--blue">
+                            <div class="select__input">
+                                <label for="searchIngredient">Ingrédients</label>
+                                <img src="./assets/medias/icons/chevron-down.svg" alt="" class="filterArrow">
+                                <input class="" type="text" name="searchIngredient" id="searchIngredient">
+                            </div>
+                            <ul class="pb-2 select__choises">
+                                
+                            </ul>
                         </div>
+                        <div id="filterAppliances" class="col-2 select select--cyan">
+                            <div class="select__input">
+                                <label for="searchAppliance">Appareils</label>
+                                <img src="./assets/medias/icons/chevron-down.svg" alt="" class="filterArrow">
+                                <input class="" type="text" name="searchAppliance" id="searchAppliance">
+                            </div>
+                            <ul class="pb-2 select__choises">
+                                
+                            </ul>
+                        </div>
+                        <div id="filterUstensils" class="col-2 select select--orange">
+                            <div class="select__input">
+                                <label for="searchUstensil">Ustensiles</label>
+                                <img src="./assets/medias/icons/chevron-down.svg" alt="" class="filterArrow">
+                                <input class="" type="text" name="searchUstensil" id="searchUstensil">
+                            </div>
+                            <ul class="pb-2 select__choises">
+                                
+                            </ul>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div>
+                <div class="container">
+                    <div id="receiptsGalery" class="row justify-content-left">
+                        
                     </div>
                 </div>
-            </section>
+            </div>
         </main>
         <script type="module" src="./scripts/data/recipes.js"></script>
         <script type="module" src="./scripts/page/index.js"></script>
         <script type="module" src="./scripts/components/cardReceipt.js"></script>
+        <script type="module" src="./scripts/search/filter.js"></script>
+        <script type="module" src="./scripts/search/search.js"></script>
         <script type="module" src="./scripts/utils/formFilters.js"></script>
     </body>
 </html>
